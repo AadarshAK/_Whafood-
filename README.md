@@ -1,7 +1,7 @@
 Hi, my name is AK47.
 The software you are using now is called "WHafood".
 
-It suggests food recipes for breakfast,lunch and dinner, currently you are using the first version of the software.
+It suggests food recipes for breakfast,lunch and dinner, currently you are using the reloaded version of the software.
 
 This software is extremely useful for those who are very busy and have no time to think on what to prepare for food, it saves a ton of time.
 
