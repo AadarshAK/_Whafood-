@@ -3,17 +3,26 @@ var photo, ak;
 var f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11, f12, f13, f14, f15, f16, f17, f18, f19, f20, f21;
 var breakfast, b1, b2 , b3, b4,b5,b6;
 var IndiaImage,fState=0,bState=0,dState=0, ic;
+var jd=true;
+var music;
 
 function preload() {
     photo = loadImage("bck.jpg");
     //Bimage = loadImage("download.jpeg");
     ic=loadImage("India.png");
+    music=loadSound("JDtheAlcoholic.mp3");
 }
 
 function setup() {
     createCanvas(1366, 625);
+
+    if(jd===true){
+        music.loop();
+    }
+
     console.log("width" + windowWidth);
     console.log("height" + windowHeight);
+
     food = Math.round(random(1, 21));
     breakfast=Math.round(random(1,6));
     dinner = Math.round(random(1, 4));
@@ -195,6 +204,8 @@ fState=21
       //  window.open('https://youtu.be/AeXluPUstVA', '_system');
     }
 
+    
+
     if (dinner === 1) {
         dinner = food; 
         dState=1;
@@ -211,7 +222,7 @@ fState=21
     }
 
     if (dinner === 4) {
-        dinner = "Parotta and Beef";
+        dinner = food;
         dState=4;
     }
 
